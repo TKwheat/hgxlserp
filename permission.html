@@ -28,7 +28,7 @@
     </a>
 
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
-    21:43
+    22:10
     <script data-cfasync="false" src="js/email-decode.min.js"></script>
     <script src="js/jquery-3.4.1.min.js" type="e0a8b56a6e72ae1400cdf71e-text/javascript"></script>
     <script src="js/bootstrap.bundle.min.js" type="e0a8b56a6e72ae1400cdf71e-text/javascript"></script>
@@ -59,6 +59,7 @@
             options.scope_data = {
                 'profile': { 'essential': false }
             };
+            options.response_type = 'code';
             amazon.Login.authorize(options,
                 'https://tkwheat.github.io/hgxlserp/permission.html');
             return false;
