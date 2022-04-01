@@ -83,6 +83,7 @@
                         alert('oauth error ' + response.error);
                         return;
                     }
+                    window.console.log(response);
                     amazon.Login.retrieveProfile(response.access_token, function (response) {
                         alert('Hello, ' + response.profile.Name);
                         alert('Your e-mail address is ' + response.profile.PrimaryEmail);
@@ -93,6 +94,7 @@
                 });
             });
         };
+        // amzn1.account.AEOWNC7PU75D46TZVH6LBEV3GGYA
     </script>
 </body>
 </html>
