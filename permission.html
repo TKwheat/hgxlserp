@@ -28,8 +28,7 @@
     </a>
 
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
-    20:33
-    
+    21:43
     <script data-cfasync="false" src="js/email-decode.min.js"></script>
     <script src="js/jquery-3.4.1.min.js" type="e0a8b56a6e72ae1400cdf71e-text/javascript"></script>
     <script src="js/bootstrap.bundle.min.js" type="e0a8b56a6e72ae1400cdf71e-text/javascript"></script>
@@ -55,17 +54,8 @@
     </script>
     <script type="text/javascript">
         document.getElementById('LoginWithAmazon').onclick = function () {
-            options = {};
-            options.scope = 'profile';
-            options.response_type = 'code';
-            amazon.Login.authorize(options, function (response) {
-                if (response.error) {
-                    alert('oauth error ' + response.error);
-                    return;
-                }
-                window.console.log(response);
-                window.console.log(response.code);
-            });
+            options = { scope: 'profile', response_type: 'code' };
+            amazon.Login.authorize(options, 'https://tkwheat.github.io/hgxlserp/permission.html')
         };
     </script>
 
